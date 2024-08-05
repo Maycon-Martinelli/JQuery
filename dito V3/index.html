@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dito Lambari</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="img/Designer.jpeg" alt="Logo do Restaurante" class="logo">
+                <h1>Dito Lambari</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo ao Dito Lambari</h2>
+            <p>Descubra uma experiência culinária única, onde cada prato é uma obra de arte.</p>
+        </section>
+
+        <section id="cardapio">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="img/Caldo de piranha.jpg" alt="Prato 1">
+                        <h3>Caldo de piranha</h3>
+                        <p>Caldo de piranha é uma tradicional sopa brasileira originária da região Norte do país, especialmente associada à culinária amazônica. Este prato é conhecido por ser preparado com a carne da piranha, um peixe de água doce famoso por seus dentes afiados e presença abundante nos rios amazônicos.</p>
+                        <button class="add-to-order" data-item="Prato 1">Adicionar ao Pedido</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/Maria Izabel.jpg" alt="Prato 2">
+                        <h3>Maria Izabel</h3>
+                        <p>Maria Izabel é um prato típico da culinária do Piauí, estado localizado na região Nordeste do Brasil. Este prato é um exemplo clássico da rica gastronomia piauiense, que combina ingredientes simples e técnicas de preparo tradicionais para criar sabores únicos e reconfortantes.</p>
+                        <button class="add-to-order" data-item="Prato 2">Adicionar ao Pedido</button>
+                    </div>
+                    <div class="menu-item">
+                        <img src="img/Ventrecha de Pacu.jpg" alt="Prato 3">
+                        <h3>Ventrecha de Pacu</h3>
+                        <p>A Ventrecha de Pacu é um prato emblemático da culinária pantaneira, especialmente popular na região Centro-Oeste do Brasil. O pacu é um peixe de água doce típico dos rios Pantanal, conhecido por sua carne macia e saborosa. A ventrecha refere-se à parte da barriga do peixe, que é apreciada por ser suculenta e rica em gordura, proporcionando um sabor distinto e textura agradável.</p>
+                        <button class="add-to-order" data-item="Prato 3">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <p>No Restaurante Dito Lambari, oferecemos uma experiência culinária excepcional. Nossa missão é proporcionar aos nossos clientes pratos de alta qualidade feitos com ingredientes frescos e selecionados.</p>
+            </div>
+        </section>
+
+        <section id="reservas">
+            <div class="container">
+                <h2>Reservas</h2>
+                <p>Para fazer uma reserva, ligue para (11) 1234-5678 ou preencha o formulário abaixo:</p>
+                <form id="reservation-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                    <label for="time">Hora:</label>
+                    <input type="time" id="time" name="time" required>
+                    <label for="guests">Número de Convidados:</label>
+                    <input type="number" id="guests" name="guests" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+       
+
+        <section id="pedidos">
+            <div class="container">
+                <h2>Pedidos</h2>
+                <div class="order-summary">
+                    <h4>Resumo do Pedido</h4>
+                    <div id="order-items"></div>
+                    <button id="submit-order">Enviar Pedido</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Endereço: Rua dos Sabores, 123, Centro, Cidade</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@ditolambari.com</p>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Dito Lambari. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
