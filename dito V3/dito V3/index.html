@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dito Lambari</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Cabeçalho da página -->
+        <div class="container">
+            <!-- Contêiner para agrupar o conteúdo do cabeçalho -->
+            <div class="logo-title">
+                <!-- Seção para o logo e o título do restaurante -->
+                <img src="img/Designer.jpeg" alt="Logo do Restaurante" class="logo">
+                <!-- Imagem do logo do restaurante -->
+                <h1>Dito Lambari</h1>
+                <!-- Título do restaurante -->
+            </div>
+            <nav>
+                <!-- Barra de navegação -->
+                <ul>
+                    <!-- Lista de links de navegação -->
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#cardapio">Cardápio</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#reservas">Reservas</a></li>
+                    <li><a href="#pedidos">Pedidos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <!-- Cada item da lista é um link para uma seção específica da página -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Conteúdo principal da página -->
+        <section id="inicio">
+            <!-- Seção de introdução da página -->
+            <h2>Bem-vindo ao Dito Lambari</h2>
+            <!-- Título da seção de boas-vindas -->
+            <p>Descubra uma experiência culinária única, onde cada prato é uma obra de arte.</p>
+            <!-- Texto descritivo da seção de boas-vindas -->
+        </section>
+
+        <section id="cardapio">
+            <!-- Seção do cardápio -->
+            <div class="container">
+                <!-- Contêiner para agrupar o conteúdo do cardápio -->
+                <h2>Nosso Cardápio</h2>
+                <!-- Título da seção de cardápio -->
+                <div class="menu-items">
+                    <!-- Div para agrupar os itens do cardápio -->
+
+                    <!-- Primeiro item do cardápio -->
+                    <div class="menu-item">
+                        <img src="img/Caldo de piranha.jpg" alt="Prato 1">
+                        <!-- Imagem do prato -->
+                        <h3>Caldo de piranha</h3>
+                        <!-- Nome do prato -->
+                        <p>A Ventrecha de Pacu é um prato emblemático da culinária pantaneira, especialmente popular na
+                            região Centro-Oeste do Brasil. O pacu é um peixe de água doce típico dos rios Pantanal,
+                            conhecido por sua carne macia e saborosa. A ventrecha refere-se à parte da barriga do peixe,
+                            que é apreciada por ser suculenta e rica em gordura, proporcionando um sabor distinto e
+                            textura agradável</p>
+                        <!-- Descrição do prato -->
+                        <button class="add-to-order" data-item="Caldo de piranha">Adicionar ao Pedido</button>
+                        <!-- Botão para adicionar o item ao pedido -->
+                    </div>
+
+                    <!-- Segundo item do cardápio -->
+                    <div class="menu-item">
+                        <img src="img/Maria Izabel.jpg" alt="Prato 2">
+                        <h3>Maria Izabel</h3>
+                        <p>Maria Izabel é um prato típico da culinária do Piauí, estado localizado na região Nordeste do
+                            Brasil. Este prato é um exemplo clássico da rica gastronomia piauiense, que combina
+                            ingredientes simples e técnicas de preparo tradicionais para criar sabores únicos e
+                            reconfortantes.</p>
+                        <button class="add-to-order" data-item="Maria Izabel">Adicionar ao Pedido</button>
+                    </div>
+
+                    <!-- Terceiro item do cardápio -->
+                    <div class="menu-item">
+                        <img src="img/Ventrecha de Pacu.jpg" alt="Prato 3">
+                        <h3>Ventrecha de Pacu</h3>
+                        <p>A Ventrecha de Pacu é um prato emblemático da culinária pantaneira, especialmente popular na
+                            região Centro-Oeste do Brasil. O pacu é um peixe de água doce típico dos rios Pantanal,
+                            conhecido por sua carne macia e saborosa. A ventrecha refere-se à parte da barriga do peixe,
+                            que é apreciada por ser suculenta e rica em gordura, proporcionando um sabor distinto e
+                            textura agradável.</p>
+                        <button class="add-to-order" data-item="Ventrecha de Pacu">Adicionar ao Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <!-- Seção "Sobre Nós" -->
+            <div class="container">
+                <h2>Sobre Nós</h2>
+                <!-- Título da seção -->
+                <p>No Restaurante Dito Lambari, oferecemos uma experiência culinária excepcional...</p>
+                <!-- Descrição sobre o restaurante -->
+            </div>
+        </section>
+
+        <section id="reservas">
+            <!-- Seção de reservas -->
+            <div class="container">
+                <h2>Reservas</h2>
+                <!-- Título da seção -->
+                <p>Para fazer uma reserva, ligue para (11) 1234-5678 ou preencha o formulário abaixo:</p>
+                <!-- Texto com informações sobre como fazer reservas -->
+                <form id="reservation-form">
+                    <!-- Formulário de reservas -->
+                    <label for="name">Nome:</label>
+                    <!-- Rótulo para o campo de nome -->
+                    <input type="text" id="name" name="name" required>
+                    <!-- Campo de entrada de texto para o nome -->
+
+                    <label for="email">Email:</label>
+                    <!-- Rótulo para o campo de email -->
+                    <input type="email" id="email" name="email" required>
+                    <!-- Campo de entrada de email -->
+
+                    <label for="date">Data:</label>
+                    <!-- Rótulo para o campo de data -->
+                    <input type="date" id="date" name="date" required>
+                    <!-- Campo de entrada de data -->
+
+                    <label for="time">Hora:</label>
+                    <!-- Rótulo para o campo de hora -->
+                    <input type="time" id="time" name="time" required>
+                    <!-- Campo de entrada de hora -->
+
+                    <label for="guests">Número de Convidados:</label>
+                    <!-- Rótulo para o campo de número de convidados -->
+                    <input type="number" id="guests" name="guests" required>
+                    <!-- Campo de entrada numérica para o número de convidados -->
+
+                    <button type="submit">Enviar</button>
+                    <!-- Botão para enviar o formulário -->
+                </form>
+            </div>
+        </section>
+
+        <section id="pedidos">
+            <!-- Seção de pedidos -->
+            <div class="container">
+                <h2>Pedidos</h2>
+                <!-- Título da seção -->
+                <div class="order-summary">
+                    <!-- Div para o resumo do pedido -->
+                    <h4>Resumo do Pedido</h4>
+                    <!-- Subtítulo da seção -->
+                    <div id="order-items"></div>
+                    <!-- Div onde os itens do pedido serão listados -->
+                    <button id="submit-order">Enviar Pedido</button>
+                    <!-- Botão para enviar o pedido -->
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <!-- Seção de contato -->
+            <div class="container">
+                <h2>Contato</h2>
+                <!-- Título da seção -->
+                <p>Endereço: Rua dos Sabores, 123, Centro, Cidade</p>
+                <!-- Informação de endereço -->
+                <p>Telefone: (11) 1234-5678</p>
+                <!-- Informação de telefone -->
+                <p>Email: contato@ditolambari.com</p>
+                <!-- Informação de email -->
+                <div class="social-media">
+                    <!-- Div para links de redes sociais -->
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <!-- Links para as redes sociais -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Rodapé da página -->
+        <div class="container">
+            <p>&copy; 2024 Dito Lambari. Todos os direitos reservados.</p>
+            <!-- Mensagem de direitos autorais -->
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link para a biblioteca jQuery -->
+    <script src="index.js"></script>
+    <!-- Link para o arquivo JavaScript externo -->
+</body>
+
+</html>

@@ -1,0 +1,374 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* Define a fonte padrão para o corpo do site */
+    margin: 0;
+    /* Remove a margem padrão do corpo */
+    padding: 0;
+    /* Remove o preenchimento padrão do corpo */
+    background: #f8f8f8;
+    /* Define a cor de fundo do corpo como cinza claro */
+    color: #333;
+    /* Define a cor do texto como cinza escuro */
+}
+
+header {
+    background: linear-gradient(to right, #8B0000, #B22222);
+    /* Aplica um gradiente de vermelho no fundo do cabeçalho */
+    color: white;
+    /* Define a cor do texto do cabeçalho como branco */
+    padding: 20px 0;
+    /* Adiciona preenchimento superior e inferior de 20px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil abaixo do cabeçalho */
+    position: fixed;
+    /* Fixa o cabeçalho no topo da página, permanecendo visível ao rolar */
+    width: 100%;
+    /* Faz o cabeçalho ocupar toda a largura da janela */
+    top: 0;
+    /* Posiciona o cabeçalho no topo da página */
+    z-index: 1000;
+    /* Garante que o cabeçalho fique acima de outros elementos na pilha de camadas */
+}
+
+header .container {
+    display: flex;
+    /* Usa flexbox para alinhar os itens dentro do cabeçalho */
+    justify-content: space-between;
+    /* Espaça os itens igualmente ao longo do cabeçalho */
+    align-items: center;
+    /* Alinha os itens verticalmente ao centro */
+    padding: 0 20px;
+    /* Adiciona preenchimento lateral de 20px */
+}
+
+.logo-title {
+    display: flex;
+    /* Usa flexbox para alinhar o logo e o título */
+    align-items: center;
+    /* Alinha verticalmente o logo e o título */
+}
+
+.logo {
+    height: 50px;
+    /* Define a altura do logo */
+    margin-right: 10px;
+    /* Adiciona margem direita ao logo para espaçamento */
+    border-radius: 50%;
+    /* Faz o logo ficar em formato circular */
+}
+
+header h1 {
+    margin: 0;
+    /* Remove a margem padrão do título */
+    font-size: 1.8em;
+    /* Define o tamanho da fonte do título */
+    font-weight: bold;
+    /* Define o título como negrito */
+}
+
+nav ul {
+    list-style: none;
+    /* Remove os marcadores de lista dos itens de navegação */
+    display: flex;
+    /* Usa flexbox para alinhar horizontalmente os itens de navegação */
+    margin: 0;
+    /* Remove a margem padrão da lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+}
+
+nav li {
+    margin: 0 15px;
+    /* Adiciona margem horizontal de 15px entre os itens de navegação */
+}
+
+nav a {
+    color: white;
+    /* Define a cor do texto dos links como branco */
+    text-decoration: none;
+    /* Remove a decoração padrão (sublinhado) dos links */
+    font-weight: bold;
+    /* Define o texto dos links como negrito */
+}
+
+nav a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado ao texto do link quando o cursor passa por cima */
+}
+
+main {
+    padding: 120px 0 20px;
+    /* Adiciona espaçamento superior de 120px e inferior de 20px ao conteúdo principal */
+}
+
+section {
+    padding: 60px 0;
+    /* Adiciona espaçamento superior e inferior de 60px em cada seção */
+    background: white;
+    /* Define a cor de fundo das seções como branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil ao redor das seções */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior de 20px entre as seções */
+}
+
+.container {
+    max-width: 1200px;
+    /* Define a largura máxima do conteúdo como 1200px */
+    margin: 0 auto;
+    /* Centraliza horizontalmente o conteúdo da página */
+    padding: 0 20px;
+    /* Adiciona preenchimento lateral de 20px dentro da área do container */
+}
+
+h2 {
+    font-size: 2.5em;
+    /* Define o tamanho da fonte dos títulos das seções */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior de 20px abaixo dos títulos */
+    color: #8B0000;
+    /* Define a cor dos títulos como vermelho escuro */
+    text-align: center;
+    /* Centraliza os títulos das seções */
+}
+
+p {
+    font-size: 1.1em;
+    /* Define o tamanho da fonte dos parágrafos */
+    line-height: 1.6;
+    /* Define a altura da linha para melhorar a legibilidade */
+    text-align: center;
+    /* Centraliza o texto dos parágrafos */
+    margin: 0 auto;
+    /* Centraliza os parágrafos na página */
+    max-width: 800px;
+    /* Define a largura máxima dos parágrafos */
+}
+
+.menu-items {
+    display: flex;
+    /* Usa flexbox para alinhar os itens do menu */
+    justify-content: space-between;
+    /* Distribui os itens do menu igualmente ao longo da linha */
+    gap: 20px;
+    /* Adiciona um espaçamento de 20px entre os itens do menu */
+}
+
+.menu-item {
+    flex: 1;
+    /* Faz com que cada item do menu ocupe uma porção igual do espaço disponível */
+    text-align: center;
+    /* Centraliza o texto dos itens do menu */
+    background: #fff;
+    /* Define a cor de fundo dos itens do menu como branco */
+    padding: 20px;
+    /* Adiciona preenchimento interno de 20px aos itens do menu */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados aos itens do menu */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil ao redor dos itens do menu */
+}
+
+.menu-item img {
+    width: 100%;
+    /* Faz com que as imagens dos itens do menu ocupem toda a largura do item */
+    height: auto;
+    /* Mantém a proporção das imagens ao redimensioná-las */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados às imagens dos itens do menu */
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+    /* Adiciona margem superior de 15px acima dos títulos dos itens do menu */
+    font-size: 1.5em;
+    /* Define o tamanho da fonte dos títulos dos itens do menu */
+    color: #8B0000;
+    /* Define a cor dos títulos dos itens do menu como vermelho escuro */
+}
+
+.add-to-order {
+    margin-top: 10px;
+    /* Adiciona margem superior de 10px acima do botão "Adicionar ao Pedido" */
+    background: #8B0000;
+    /* Define a cor de fundo do botão como vermelho escuro */
+    color: white;
+    /* Define a cor do texto do botão como branco */
+    border: none;
+    /* Remove a borda padrão do botão */
+    padding: 10px 20px;
+    /* Adiciona preenchimento interno ao botão */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados ao botão */
+    cursor: pointer;
+    /* Altera o cursor para indicar que o botão é clicável */
+}
+
+.add-to-order:hover {
+    background: #B22222;
+    /* Altera a cor de fundo do botão ao passar o cursor por cima */
+}
+
+form {
+    display: flex;
+    /* Usa flexbox para alinhar os itens dentro do formulário */
+    flex-direction: column;
+    /* Alinha os itens do formulário verticalmente */
+    max-width: 600px;
+    /* Define a largura máxima do formulário como 600px */
+    margin: 0 auto;
+    /* Centraliza o formulário na página */
+    background: #fff;
+    /* Define a cor de fundo do formulário como branco */
+    padding: 20px;
+    /* Adiciona preenchimento interno de 20px ao formulário */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados ao formulário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil ao formulário */
+}
+
+form label {
+    margin: 10px 0 5px;
+    /* Adiciona margem ao redor dos rótulos dos campos do formulário */
+    font-weight: bold;
+    /* Define o peso da fonte dos rótulos como negrito */
+}
+
+form input,
+form button {
+    padding: 10px;
+    /* Adiciona preenchimento interno de 10px aos campos de entrada e ao botão */
+    margin-bottom: 10px;
+    /* Adiciona margem inferior de 10px entre os campos do formulário */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados aos campos do formulário e ao botão */
+    border: 1px solid #ccc;
+    /* Define a borda dos campos do formulário e do botão */
+}
+
+form button {
+    background: #8B0000;
+    /* Define a cor de fundo do botão como vermelho escuro */
+    color: white;
+    /* Define a cor do texto do botão como branco */
+    border: none;
+    /* Remove a borda padrão do botão */
+    cursor: pointer;
+    /* Altera o cursor para indicar que o botão é clicável */
+}
+
+form button:hover {
+    background: #B22222;
+    /* Altera a cor de fundo do botão ao passar o cursor por cima */
+}
+
+.social-media {
+    display: flex;
+    /* Usa flexbox para alinhar os ícones de mídia social */
+    justify-content: center;
+    /* Centraliza os ícones de mídia social */
+    margin-top: 20px;
+    /* Adiciona margem superior de 20px acima dos ícones de mídia social */
+}
+
+.social-media a {
+    margin: 0 10px;
+    /* Adiciona margem lateral de 10px entre os ícones de mídia social */
+    color: #8B0000;
+    /* Define a cor dos ícones de mídia social como vermelho escuro */
+    font-size: 1.5em;
+    /* Define o tamanho dos ícones de mídia social */
+    text-decoration: none;
+    /* Remove a decoração padrão dos links */
+}
+
+.social-media a:hover {
+    color: #B22222;
+    /* Altera a cor dos ícones ao passar o cursor por cima */
+}
+
+footer {
+    background-color: #333;
+    /* Define a cor de fundo do rodapé como cinza escuro */
+    color: white;
+    /* Define a cor do texto do rodapé como branco */
+    text-align: center;
+    /* Centraliza o texto do rodapé */
+    padding: 20px 0;
+    /* Adiciona preenchimento superior e inferior de 20px ao rodapé */
+}
+
+.order-summary {
+    margin-top: 20px;
+    /* Adiciona margem superior de 20px acima do resumo do pedido */
+    background: #f1f1f1;
+    /* Define a cor de fundo do resumo do pedido como cinza claro */
+    padding: 20px;
+    /* Adiciona preenchimento interno de 20px ao resumo do pedido */
+    border-radius: 10px;
+    /* Adiciona cantos arredondados ao resumo do pedido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil ao resumo do pedido */
+    text-align: center;
+    /* Centraliza o texto dentro do resumo do pedido */
+}
+
+.order-summary h4 {
+    margin-bottom: 15px;
+    /* Adiciona margem inferior de 15px abaixo do título do resumo */
+    font-size: 1.5em;
+    /* Define o tamanho da fonte do título do resumo */
+    color: #8B0000;
+    /* Define a cor do título do resumo como vermelho escuro */
+}
+
+.order-summary p {
+    display: flex;
+    /* Usa flexbox para alinhar os itens do resumo */
+    justify-content: space-between;
+    /* Espaça os itens do resumo igualmente ao longo da linha */
+    align-items: center;
+    /* Alinha os itens do resumo verticalmente ao centro */
+    margin: 5px 0;
+    /* Adiciona margem vertical de 5px entre as linhas do resumo */
+    padding: 10px;
+    /* Adiciona preenchimento interno de 10px ao redor das linhas do resumo */
+    background: white;
+    /* Define a cor de fundo das linhas do resumo como branco */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados às linhas do resumo */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra sutil às linhas do resumo */
+}
+
+.order-summary .remove-item {
+    cursor: pointer;
+    /* Altera o cursor para indicar que o texto é clicável */
+    color: red;
+    /* Define a cor do texto para remover itens como vermelho */
+    font-weight: bold;
+    /* Define o texto para remover itens como negrito */
+}
+
+#submit-order {
+    background: #8B0000;
+    /* Define a cor de fundo do botão de envio como vermelho escuro */
+    color: white;
+    /* Define a cor do texto do botão de envio como branco */
+    border: none;
+    /* Remove a borda padrão do botão de envio */
+    padding: 10px 20px;
+    /* Adiciona preenchimento interno ao botão de envio */
+    border-radius: 5px;
+    /* Adiciona cantos arredondados ao botão de envio */
+    cursor: pointer;
+    /* Altera o cursor para indicar que o botão é clicável */
+    margin-top: 15px;
+    /* Adiciona margem superior de 15px acima do botão de envio */
+}
+
+#submit-order:hover {
+    background: #B22222;
+    /* Altera a cor de fundo do botão de envio ao passar o cursor por cima */
+}
